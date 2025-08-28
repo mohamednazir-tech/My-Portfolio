@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Mohamed Nazir</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mohamed Nazir</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="nazir profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Mohamed Nazir</h1>
+            <p class="section__text__p2">Full Stake Developer</p>
+            <div class="btn-container">
+                <a href="http://localhost:4000/uploads/resumes/resume.pdf" download class="btn btn-color-2">
+                     Download CV
+                      </a>
+
+              <input type="file" id="resumeInput" accept=".pdf,.doc,.docx" style="display: none;">
+
+            <button 
+                class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+            </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png"
+                 alt="My linkedin profile"
+                class="icon" 
+                onclick="location.href='https:www.linkedin.com/in/nazir2003'"
+                />
+                <img src="./assets/github.png"
+                 alt="My Github profile"
+                class="icon" 
+                onclick="location.href='https://github.com/mohamednazir-tech'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                src="./assets/about-pic.png" 
+                alt="Profile picture"  
+                class="about-pic"
+               />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                        src="./assets/experience.png" 
+                        alt="Experience.icon" 
+                        class="icon"
+                        />
+                        <h3>Fresher</h3>
+                        <p>Fresher</p> <br />Full Stake Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./assets/education.png" 
+                        alt="Education.icon" 
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>B.Sc.Electronics and Communication Science <br /></p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Aspiring Full Stack Developer with a strong interest in building dynamic web applications.
+Currently focused on enhancing frontend skills with HTML, CSS, and JavaScript, while
+beginning to explore backend technologies. Eager to learn React and backend
+development to become a well-rounded full stack professional. Open to opportunities that
+offer learning, mentorship, and hands-on experience in modern web development.
+                  </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./#experience'" 
+        />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">explore My</p>
+        <h1 class="title">Fresher</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title"> Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>React JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                   <div class="details-container">
+                    <h2 class="experience-sub-title"> Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Oracle SQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Django</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Advanced Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png"    
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./#projects'" 
+        />
+    </section>
+    <section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">projects</h1>
+  <div class="experience-details-container">
+    <div class="about-containers" id="project-list">
+      <!-- Dynamic projects will be inserted here -->
+    </div>
+  </div>
+
+  <!-- Explore More Button -->
+  <div style="text-align: center; margin-top: 20px;">
+    <button id="explore-more-btn" class="btn btn-color-2 project-btn">Explore More</button>
+  </div>
+
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+</section>
+
+<script>
+  let allProjects = [];
+  let currentIndex = 0;
+  const limit = 3;
+
+  const container = document.getElementById("project-list");
+  const exploreBtn = document.getElementById("explore-more-btn");
+
+  fetch("http://localhost:4000/projects")
+  .then((res) => res.json())
+  .then((data) => {
+    allProjects = data;
+    renderProjects();
+  });
+
+
+  function renderProjects() {
+    const nextProjects = allProjects.slice(currentIndex, currentIndex + limit);
+    nextProjects.forEach((project) => {
+      container.innerHTML += `
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="${project.image}" alt="${project.name}" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">${project.name}</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='${project.github}'">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='${project.live}'">Live Demo</button>
+          </div>
+        </div>`;
+    });
+    currentIndex += limit;
+
+    if (currentIndex >= allProjects.length) {
+      exploreBtn.style.display = "none";
+    }
+  }
+</script>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="./assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon"
+                />
+                <p><a href="mailto:mohamednazirm686@gmail.com">mohamednazirm686@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/linkedin.png"
+                alt="Linkedin icon"
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/nazir2003">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+             <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
+             </ul>
+            </div>
+        </nav>
+        <p> copyright &#169; 2025 Mohamed Nazir. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+ </body>
+</html>
